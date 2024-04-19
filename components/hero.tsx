@@ -3,8 +3,12 @@
 import { TextGenerateEffect } from './ui/text-generate-effect';
 
 const words =
-  "Rome wasn't built in a day and neither will this website. Relax. Take a deep breath. We'll get there. Slowly but surely. <3 Ozzy";
+  'Just a sec—me and my AI are giving this place a digital makeover. Details soon! <3 Ozzy & ChatGPT';
 
 export const Hero = () => {
-  return <TextGenerateEffect words={words} />;
+  return (
+    <div className="flex flex-col items-center justify-center h-screen">
+      <TextGenerateEffect words={words} />
+    </div>
+  );
 };
